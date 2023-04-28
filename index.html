@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mustafa's Portfolio</title>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+
+    <!-- Bootstrap Icon-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css"
+    />
+  
+    <!-- App Styles -->
+    <link rel="stylesheet" href="styles/app.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="animate__animated animate__slideInDown">
+        <div class="container">
+          <h1 class="header__logo">
+            <a href="">MB</a>
+          </h1>
+          <nav class="navigation">
+            <ul>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="header__resume">
+            <a class="btn btn--main" href="assets/resume.pdf" download>
+              <i class="bi bi-download"></i> Resume
+            </a>
+          </div>
+          <div class="header__mobile">
+            <button id="navigation-button">
+              <i class="bi bi-list"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero__wrapper">
+          <h1 class="hero__title">
+            Mustafa Bharmal<br />
+            <!-- An ICT student -->
+          </h1>
+          <p class="hero__content">
+            A person who Believes in himself.
+          </p>
+
+          <div class="hero__img" style="background-image: url('assets/curve.png')">
+            <div class="hero__imgCircle animate__animated animate__slideInUp">
+              <img src="assets/profile-1.png" alt="Profile Picture" />
+            </div>
+          </div>
+
+          <div class="hero__social animate__animated animate__slideInUp">
+            <ul class="social">
+              <li>
+                <a href="https://www.linkedin.com/in/mustafa-bharmal-890aa5221/"><i class="bi bi-linkedin"></i></a>
+              </li>
+              <li>
+                <a href="https://github.com/Mustafabharmal"><i class="bi bi-github"></i></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/MustafaBharmal_?t=yurOLOPjLT21MO16oUR7qA&s=09"><i class="bi bi-twitter"></i></a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/MustafaBharmal05?mibextid=ZbWKwL"><i class="bi bi-facebook"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="section animate__animated animate__slideInUp" id="portfolio">
+      <div class="container">
+        <div class="section__header section__header--center">
+          <h2 class="section__title">Portfolio</h2>
+          <p class="section__subtitle">See my latest work</p>
+        </div>
+        <div class="portfolio">
+          <div class="portfolio__box">
+            <div class="portfolio__img">
+              <img src="assets/Portfolio-1.jpg" alt="Portfolio Items" />
+            </div>
+            <div class="portfolio__info">
+              <h3 class="portfolio__title">Prob-AI-Gaming</h3>
+              <p class="portfolio__content">
+                I developed a Python GUI project with two components: an AI-powered question-and-answer system and a game of "Rock Paper Scissors." The system uses the ChatGPT API to analyze user input and provide accurate responses. The game uses advanced algorithms to provide a challenging experience for users.
+              </p>
+              <a class="portfolio__link" href="https://github.com/Mustafabharmal/Prob-AI-Gaming">See Work <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="portfolio__box">
+            <div class="portfolio__img">
+              <img src="assets/Portfolio-2.jpg" alt="Portfolio Items" />
+            </div>
+            <div class="portfolio__info">
+              <h3 class="portfolio__title">Assignment-Management</h3>
+              <p class="portfolio__content">
+                I have developed a file transfer project that utilizes Java GUI and OOP concepts. The project is designed to transfer files using a server-client format. The client-side of the software features a user-friendly GUI, while the server-side processes file transfer requests. I have implemented modular classes to ensure the software follows OOP principles and is easily modifiable. Overall, this project demonstrates the efficiency and effectiveness of using Java GUI and OOP concepts for software development.
+              </p>
+              <a class="portfolio__link" href="https://github.com/Mustafabharmal/Assignment-Management">See Work <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="portfolio__box">
+            <div class="portfolio__img">
+              <img src="assets/Portfolio-3.jpg" alt="Portfolio Items" />
+            </div>
+            <div class="portfolio__info">
+              <h3 class="portfolio__title">Speak-Write</h3>
+              <p class="portfolio__content">
+                This Python-based software enables users to convert text to audio and vice versa, as well as extract text from PDF files and convert it to audio. It utilizes various libraries and APIs for seamless conversion. It is helpful for individuals who prefer audio or text content or have visual impairments. The software is versatile and can be used for educational, accessibility, or productivity purposes.
+              </p>
+              <a class="portfolio__link" href="https://github.com/Mustafabharmal/Speak-Write">See Work <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="portfolio__box">
+            <div class="portfolio__img">
+              <img src="assets/Portfolio-4.jpg" alt="Portfolio Items" />
+            </div>
+            <div class="portfolio__info">
+              <h3 class="portfolio__title">Pathfinding-Advanture</h3>
+              <p class="portfolio__content">
+                The Treasure Hunt game was developed using Python programming language and the Tiled software for designing the map. The game incorporates concepts from graph theory, including the BFS algorithm to find the shortest path from the starting point to the treasure. The game is played on a directed graph with unweighted edges and new random subgraphs are generated each time the game is played. The game also includes various types of graphs such as the wheel graph, complete graph, bipartite graph, bridge, and cut vertex. Players must navigate the map by colliding with pillars to receive questions and keys to unlock the next checkpoint. Each correct answer awards 100 points, and incorrect answers result in a deduction of 50 points. The game ends after five incorrect answers. Overall, the project demonstrates the application of graph theory in game development and highlights the use of Python and Tiled software for game design.
+              </p>
+              <a class="portfolio__link" href="https://github.com/Mustafabharmal/Pathfinding-Advanture">See Work <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="section__footer">
+          <a href="#contact">
+            Ask for More Projects
+            <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="about">
+          <div class="about__left">
+            <div class="section__header">
+              <h2 class="section__title">About</h2>
+              <p class="section__subtitle">Few things about me</p>
+            </div>
+            <p class="about__bio">
+              I exude a passion for engineering and strive to make my mark in the field. My expertise in project and time management allows me to efficiently allocate resources and meet deadlines with ease. Additionally, my exceptional communication skills and ability to solve complex problems make me a valuable asset to any team. I have an insatiable thirst for knowledge and am willing to listen and learn from others, which equips me to adapt to any situation and consistently deliver outstanding results. My positive attitude and friendly demeanor make me a pleasure to work with, and my commitment to excellence ensures that I will continue to achieve success in all of my endeavors.
+            </p>
+            <h4 class="about__skillsTitle">Hard Skills</h4>
+            <ul class="about__skillsList">
+              <li>Python</li>
+              <li>C++</li>
+              <li>JavaScript</li>
+              <li>Java</li>
+              <li>C</li>
+              <li>PHP</li>
+              <li>CSS</li>
+              <li>R </li>
+              <li>Sql</li>
+              <li>HTML</li>
+              <li>Circuit Design</li>
+            </ul><br>
+            <h4 class="about__skillsTitle">Soft Skills</h4>
+            <ul class="about__skillsList">
+              <li>Believes in ethics</li>
+              <li>Leadership</li>
+              <li>Adaptability</li>
+              <li>Friendly</li>
+              <li>Communication skills</li>    
+            </ul>
+          </div>
+          <div class="about__right">
+            <img src="assets/avatar.png" alt="Profile Picture" v />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact__center">
+            <div class="section__header">
+              <h2 class="section__title">Contact Me</h2>
+            </div>
+            <div class="contact__info">
+              <p>Email Me:</p>
+              <a href="mailto:mustafa.bharmal178@gmail.com">mustafa.bharmal178@gmail.com</a>
+            </div>
+
+            <div class="contact__info">
+              <p>Call Me:</p>
+              <a href="tel:+917817878653">+917817878653</a>
+            </div>
+
+            <div class="contact__info">
+              <p>Follow Me:</p>
+                <a href="https://www.linkedin.com/in/mustafa-bharmal-890aa5221/"><i class="bi bi-linkedin"> </i></a>
+                <a href="https://github.com/Mustafabharmal"><i class="bi bi-github"> </i></a>
+                <a href="https://twitter.com/MustafaBharmal_?t=yurOLOPjLT21MO16oUR7qA&s=09"><i class="bi bi-twitter"> </i></a>
+                <a href="https://www.facebook.com/MustafaBharmal05?mibextid=ZbWKwL"><i class="bi bi-facebook"> </i></a>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__copyright">
+        <p>Made with &hearts; by <a href="">Mustafa Bharmal</a></p>
+      </div>
+    </footer>
+  </body>
+</html>
